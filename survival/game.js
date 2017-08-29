@@ -11,7 +11,7 @@ var math = pjs.math;
 var mouse = pjs.mouseControl.initMouseControl();
 var key = pjs.keyControl.initKeyControl();
 
-pjs.mouseControl.setCursorImage("cursor1.png");
+pjs.mouseControl.setCursorImage("img/cursor1.png");
 
 var color = ['red', 'yellow', 'blue', 'black', 'orange'];
 var index = pjs.math.random(0, color.length-1);
@@ -19,14 +19,14 @@ var index = pjs.math.random(0, color.length-1);
 var width = game.getWH().w;
 var height = game.getWH().h;
 
-var music = pjs.audio.newAudio('001.mp3', 0.5);
+var music = pjs.audio.newAudio('msc/001.mp3', 0.5);
 
 var max = 4000;
 
 
 
 var fon = game.newImageObject({
-	file : 'bg.jpg', 
+	file : 'img/bg.jpg', 
 	x: 0, 
 	y: 0, 
 	w: max, 
@@ -61,7 +61,7 @@ var player = game.newRoundRectObject({
 var button = game.newImageObject({
 	x : 150, y : 150,
 	w : 80, h : 80,
-	file : 'cancel.png',
+	file : 'img/cancel.png',
 	alpha : 0.8
 })
 var inventory = game.newRectObject({
@@ -72,7 +72,7 @@ var inventory = game.newRectObject({
 })
 var boat = game.newImageObject({
 	x : -130, y : 10,
-	file : 'boat.png',
+	file : 'img/boat.png',
 	w : 60, h : 100,
 	angle : -90
 })
@@ -80,25 +80,25 @@ var boat = game.newImageObject({
 var log = game.newImageObject({
 	x : 20, y : 40,
 	w : 70, h : 70,
-	file : 'log.png'
+	file : 'img/log.png'
 })
 
 var stone = game.newImageObject({
 	x : 20, y : 40,
 	w : 70, h : 70,
-	file : 'stone.png'
+	file : 'img/stone.png'
 })
 
 var coinBB = game.newImageObject({
 	x : 20, y : 40,
 	w : 70, h : 70,
-	file : 'coin.png'
+	file : 'img/coin.png'
 })
 
 var heart = game.newImageObject({
 	x : 20, y : 40,
 	w : 70, h : 70,
-	file : 'hearts.png'
+	file : 'img/hearts.png'
 })
 
 
@@ -106,17 +106,17 @@ var heart = game.newImageObject({
 var rect = game.newImageObject({
 	x : math.random(0, max), y : math.random(0, max),
 	w : 70, h : 70,
-	file : 'spider.png'
+	file : 'img/spider.png'
 })
 var rect2 = game.newImageObject({
 	x : math.random(0, max), y : math.random(0, max),
 	w : 70, h : 70,
-	file : 'spider.png'
+	file : 'img/spider.png'
 })
 var rect3 = game.newImageObject({
 	x : math.random(0, max), y : math.random(0, max),
 	w : 70, h : 70,
-	file : 'spider.png'
+	file : 'img/spider.png'
 })
 
 
@@ -180,7 +180,7 @@ OOP.fillArr(trees, 90, function () {
 	return game.newImageObject({
 		position : point(math.random(0, max), math.random(0, max)),
 		w : 250, h : 250,
-		file : 'tree.png',
+		file : 'img/tree.png',
 		alpha : 0.9
 	})
 });
@@ -189,7 +189,7 @@ OOP.fillArr(bushes, 100, function () {
 	return game.newImageObject({
 		position : point(math.random(0, max), math.random(0, max)),
 		width : 150, height : 150,
-		file : 'bush.png',
+		file : 'img/bush.png',
 		alpha : 0.95
 	});
 });
@@ -208,7 +208,7 @@ OOP.fillArr(mushroom, 30, function () {
 	return game.newImageObject({
 		position : point(math.random(0, max), math.random(0, max)),
 		w : 40, h : 40,
-		file : 'mushroom.png',
+		file : 'img/mushroom.png',
 		angle : math.random(0, 359)
 	});
 });
@@ -218,25 +218,25 @@ OOP.fillArr(mushroom, 30, function () {
 var tomahawk = game.newImageObject({
 	x : 10, y : height-90,
 	w : 70, h : 70,
-	file : 'tomahawk.png',
+	file : 'img/tomahawk.png',
 	alpha : 0.2
 })
 var armor = game.newImageObject({
 	x : 10, y : height-90,
 	w : 70, h : 70,
-	file : 'armor.png',
+	file : 'img/armor.png',
 	alpha : 0.2
 })
 var bo = game.newImageObject({
 	x : 10, y : height-90,
 	w : 70, h : 70,
-	file : 'bo.png',
+	file : 'img/bo.png',
 	alpha : 0.2
 })
 var fire = game.newImageObject({
 	x : -8000, y : 10,
 	w : 70, h : 70,
-	file : 'fire.png'
+	file : 'img/fire.png'
 })
 
 
